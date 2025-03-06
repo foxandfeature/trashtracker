@@ -1,8 +1,32 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: gray;
+    display: flex;
 }
-html, body, #map {
+
+html,
+body,
+#map {
     height: 100%;
-    width: 100vw;
+    width: 100%;
+}
+
+#map {
+    flex: 6;
+}
+
+#menu {
+    flex: 3;
+    background-color: white;
+    display: inline;
+}
+
+#searchbar {
+    
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+
 }

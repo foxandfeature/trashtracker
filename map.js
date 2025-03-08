@@ -4,10 +4,19 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-map.locate({ setView: true });
+var userLocation = null
+var locationMarker = null
 
 function onLocationFound(e) {
-    L.marker(e.latlng).addTo(map)
+    userLocation = e.latlng
+    zoomToUserLocation()
+    if (locationMarker == null){
+        locationMarker = L.marker(userLocation, { icon: locationIcon })
+        locationMarker.addTo(map)
+    }   
+    else{
+        locationMarker.setLatLng(userLocation)
+    }
 }
 map.on('locationfound', onLocationFound);
 
@@ -16,14 +25,8 @@ function onLocationError(e) {
 }
 map.on('locationerror', onLocationError);
 
-var icon = L.icon({
-    iconUrl: 'trash-can.png',
-    iconSize:     [30, 30],
-    iconAnchor:   [15, 15],
-});
-
 L.geoJSON(locations, {
     pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {icon: icon})
+        return L.marker(latlng, { icon: trashcanIcon })
     }
 }).addTo(map);

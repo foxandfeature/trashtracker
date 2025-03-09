@@ -11,10 +11,11 @@ function startCompass() {
       DeviceOrientationEvent.requestPermission()
         .then((response) => {
           if (response === "granted") {
+            Document.getElementById("ios-magnetometer-request-menu").style.visibility = hidden;
             window.addEventListener("deviceorientation", deviceOrientationhHandler, true);
             compassActive = true
           } else {
-            alert("has to be allowed!");
+            Document.getElementById("ios-magnetometer-request-menu").style.visibility = visible;
           }
         })
         .catch(() => alert("not supported"));
@@ -34,9 +35,8 @@ function deviceOrientationhHandler(e) {
   }
 }
 
-if (isIOS) {
-  element.addEventListener("click", function () { startCompass() });
-}
-else {
+if (window.DeviceOrientationEvent) {
   startCompass()
 }
+
+

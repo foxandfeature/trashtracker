@@ -27,7 +27,7 @@ function deviceOrientationhHandler(e) {
   if (locationMarkerIcon != null) {
     locationMarkerIcon.style.transform = `translate(-50%, -50%) rotate(${-90}deg)`;
   }
-  Console.log(compassRotation)
+  console.log(compassRotation)
 }
 
 startCompass();

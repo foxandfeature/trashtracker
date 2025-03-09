@@ -36,6 +36,6 @@ locate()
 
 var markers
 locations.foreach(function (value) {
-    markers.push(L.marker(value, { icon: trashcanIcon });
+    markers.push(L.marker(value, { icon: trashcanIcon }));
 })
 L.layerGroup(markers).addTo(map);

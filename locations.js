@@ -7,7 +7,7 @@ async function loadLocations(path) {
     let text_data = await response.text();
     text_data.split("\n").forEach(function (value) {
         var coordinates = value.split(";")
-        locations.push(L.latLng(Number(coordinates[0], Number(coordinates[1])));
+        locations.push(L.latLng(Number(coordinates[0]), Number(coordinates[1])));
     })
     return text_data;
 }

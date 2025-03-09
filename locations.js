@@ -1,5 +1,5 @@
-var locations
 async function loadLocations(path) {
+    let locations
     let response = await fetch("locations.csv");
     if (response.status != 200) {
         throw new Error("Server Error");
@@ -9,7 +9,11 @@ async function loadLocations(path) {
         var coordinates = value.split(";")
         locations.push(L.latLng(Number(coordinates[0]), Number(coordinates[1])));
     })
-    return text_data;
+    var markers
+    locations.foreach(function (value) {
+        markers.push(L.marker(value, { icon: trashcanIcon }));
+    })
+    L.layerGroup(markers).addTo(map);
 }
 loadLocations()
 

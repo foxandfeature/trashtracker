@@ -14,11 +14,9 @@ function startCompass() {
             Document.getElementById("ios-magnetometer-request-menu").style.visibility = hidden;
             window.addEventListener("deviceorientation", deviceOrientationhHandler, true);
             compassActive = true
-          } else {
-            Document.getElementById("ios-magnetometer-request-menu").style.visibility = visible;
           }
         })
-        .catch(() => alert("not supported"));
+        .catch(() => { Document.getElementById("ios-magnetometer-request-menu").style.visibility = visible; });
     }
     else {
       window.addEventListener("deviceorientationabsolute", deviceOrientationhHandler, true);

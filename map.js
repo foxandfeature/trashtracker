@@ -10,9 +10,9 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var firstUSerLocationZoom = true
 function onLocationFound(e) {
     userLocation = e.latlng
-    if (firstUSerLocationZoom){
+    if (firstUSerLocationZoom) {
         firstUSerLocationZoom = false
-        map.setView(userLocation, 18, {animate: true})
+        map.setView(userLocation, 18, { animate: true })
     }
     if (locationMarker == null) {
         locationMarker = L.marker(userLocation, { icon: locationIcon })
@@ -34,8 +34,8 @@ function locate() {
 }
 locate()
 
-L.geoJSON(locations, {
-    pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, { icon: trashcanIcon })
-    }
-}).addTo(map);
+var markers
+locations.foreach(function (value) {
+    markers.push(L.marker(value, { icon: trashcanIcon });
+})
+L.layerGroup(markers).addTo(map);

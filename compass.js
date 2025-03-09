@@ -25,7 +25,7 @@ function deviceOrientationhHandler(e) {
   compassRotation = e.webkitCompassHeading || Math.abs(e.alpha - 360);
   let locationMarkerIcon = document.getElementById("location-marker-icon")
   if (locationMarkerIcon != null) {
-    locationMarkerIcon.style.transform = `translate(-50%, -50%) rotate(${-90}deg)`;
+    locationMarkerIcon.style.transform = `translate(-50%, -50%) rotate(${compassRotation}deg)`;
   }
   console.log(compassRotation)
 }

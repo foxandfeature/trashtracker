@@ -1,18 +1,9 @@
-var shouldzoomToUserLocation = false
-document.getElementById("locationButton").onclick = function () {
+document.getElementById("location-button").onclick = function () {
     shouldzoomToUserLocation = true
     if (userLocation == null) {
-        map.locate({ watch: true, enableHighAccuracy: true});
+        locate()
     }
-    else{
-        zoomToUserLocation()
+    else {
+        map.flyTo(userLocation, 18)
     }
-}
-
-function zoomToUserLocation(){
-    if (shouldzoomToUserLocation){
-        map.flyTo(userLocation, 16)
-        shouldzoomToUserLocation = false
-    }
-    
 }

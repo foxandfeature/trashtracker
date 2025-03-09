@@ -7,8 +7,13 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+var firstUSerLocationZoom = true
 function onLocationFound(e) {
     userLocation = e.latlng
+    if (firstUSerLocationZoom){
+        firstUSerLocationZoom = false
+        map.setView(userLocation, 18, {animate: true})
+    }
     if (locationMarker == null) {
         locationMarker = L.marker(userLocation, { icon: locationIcon })
         locationMarker.addTo(map)
@@ -20,7 +25,7 @@ function onLocationFound(e) {
 map.on('locationfound', onLocationFound);
 
 function onLocationError(e) {
-    alert(e.message);
+    console.log(e.message);
 }
 map.on('locationerror', onLocationError);
 

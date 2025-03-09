@@ -1,13 +1,14 @@
-async function loadFile(path) {
-	let response = await fetch(path);
+async function loadLocations(path) {
+	let response = await fetch("locations.csv");
 	if(response.status != 200) {
 		throw new Error("Server Error");
 	}
 	let text_data = await response.text();
-    console.log(text_data)
+    text_data.split("\n")
+    console.log(text_data.split("\n"))
 	return text_data;
 }
-loadFile("locations.csv")
+loadLocations()
 
 const locations = [{
     "type": "Point",

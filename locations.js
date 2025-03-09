@@ -10,7 +10,7 @@ async function loadLocations(path) {
         locations.push(L.latLng(Number(coordinates[0]), Number(coordinates[1])));
     })
     let markers = []
-    locations.foreach(function (value) {
+    locations.forEach(function (value) {
         markers.push(L.marker(value, { icon: trashcanIcon }));
     })
     L.layerGroup(markers).addTo(map);

@@ -11,12 +11,12 @@ function startCompass() {
       DeviceOrientationEvent.requestPermission()
         .then((response) => {
           if (response === "granted") {
-            Document.getElementById("ios-magnetometer-request-menu").style.visibility = hidden;
+            document.getElementById("ios-magnetometer-request-menu").style.visibility = "hidden";
             window.addEventListener("deviceorientation", deviceOrientationhHandler, true);
             compassActive = true
           }
         })
-        .catch(() => { Document.getElementById("ios-magnetometer-request-menu").style.visibility = visible; });
+        .catch(() => { document.getElementById("ios-magnetometer-request-menu").style.visibility = "visible"; });
     }
     else {
       window.addEventListener("deviceorientationabsolute", deviceOrientationhHandler, true);

@@ -5,7 +5,6 @@ const isIOS = (
 );
 
 function startCompass() {
-  alert("hi")
   if (isIOS) {
     DeviceOrientationEvent.requestPermission()
       .then((response) => {
@@ -24,12 +23,10 @@ function startCompass() {
 
 function deviceOrientationhHandler(e) {
   compassRotation = e.webkitCompassHeading || Math.abs(e.alpha - 360);
-  alert(compassRotation)
   let locationMarkerIcon = document.getElementById("location-marker-icon")
   if (locationMarkerIcon != null) {
-    locationMarkerIcon.style.transform = "translate(-50%, -50%) rotate(90deg)";
+    locationMarkerIcon.style.transform = `translate(-50%, -50%) rotate(${-90}deg)`;
   }
-
 }
 
 startCompass();

@@ -12,8 +12,6 @@ function onLocationFound(e) {
     if (locationMarker == null) {
         locationMarker = L.marker(userLocation, { icon: locationIcon })
         locationMarker.addTo(map)
-        let locationMarkerIcon = document.getElementById("location-marker-icon")
-        locationMarkerIcon.style.transform = `translate(-50%, -50%) rotate(${-90}deg)`;
     }
     else {
         locationMarker.setLatLng(userLocation)

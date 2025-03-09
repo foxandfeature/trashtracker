@@ -30,8 +30,9 @@ function deviceOrientationhHandler(e) {
 }
 
 if (isIOS){
-  alert("oki")
-  setTimeout(startCompass, 1000)
+  if (confirm("Press a button!") == true) {
+    startCompass()
+  }
 }
 else{
   startCompass()

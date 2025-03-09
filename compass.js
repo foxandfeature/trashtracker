@@ -1,23 +1,28 @@
 var compassRotation
+var compassActive = false
 const isIOS = (
   navigator.userAgent.match(/(iPod|iPhone|iPad)/) &&
   navigator.userAgent.match(/AppleWebKit/)
 );
 
 function startCompass() {
-  if (isIOS) {
-    DeviceOrientationEvent.requestPermission()
-      .then((response) => {
-        if (response === "granted") {
-          window.addEventListener("deviceorientation", deviceOrientationhHandler, true);
-        } else {
-          alert("has to be allowed!");
-        }
-      })
-      .catch(() => alert("not supported"));
-  }
-  else {
-    window.addEventListener("deviceorientationabsolute", deviceOrientationhHandler, true);
+  if (compassActive != true) {
+    if (isIOS) {
+      DeviceOrientationEvent.requestPermission()
+        .then((response) => {
+          if (response === "granted") {
+            window.addEventListener("deviceorientation", deviceOrientationhHandler, true);
+            compassActive = true
+          } else {
+            alert("has to be allowed!");
+          }
+        })
+        .catch(() => alert("not supported"));
+    }
+    else {
+      window.addEventListener("deviceorientationabsolute", deviceOrientationhHandler, true);
+      compassActive = true
+    }
   }
 }
 
@@ -29,11 +34,9 @@ function deviceOrientationhHandler(e) {
   }
 }
 
-if (isIOS){
-  if (confirm("Press a button!") == true) {
-    startCompass()
-  }
+if (isIOS) {
+  element.addEventListener("click", function () { startCompass });
 }
-else{
+else {
   startCompass()
 }

@@ -1,5 +1,4 @@
 async function loadLocations() {
-   
     let response = await fetch("locations.csv");
     if (response.status != 200) {
         throw new Error("Server Error");
@@ -18,9 +17,3 @@ async function loadLocations() {
     L.layerGroup(markers).addTo(map);
 }
 loadLocations()
-
-
-/*= [{
-    "type": "Point",
-    "coordinates": [9.783225081686828, 52.28165009176988]
-}];*/

@@ -1,10 +1,11 @@
-async function loadLocations(path) {
+async function loadLocations() {
     let locations = []
     let response = await fetch("locations.csv");
     if (response.status != 200) {
         throw new Error("Server Error");
     }
     let text_data = await response.text();
+    console.log(text_data)
     text_data.split("\n").forEach(function (value) {
         let coordinates = value.split(";")
         locations.push(L.latLng(Number(coordinates[0]), Number(coordinates[1])));

@@ -35,7 +35,7 @@ function deviceOrientationhHandler(e) {
 }
 
 if (isIOS) {
-  element.addEventListener("click", function () { startCompass });
+  element.addEventListener("click", function () { startCompass() });
 }
 else {
   startCompass()

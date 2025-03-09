@@ -15,6 +15,10 @@ function startCompass() {
             window.addEventListener("deviceorientation", deviceOrientationhHandler, true);
             compassActive = true
           }
+          else{
+            alert("User denied")
+            document.getElementById("ios-magnetometer-request-menu").style.visibility = "hidden";
+          }
         })
         .catch(() => { document.getElementById("ios-magnetometer-request-menu").style.visibility = "visible"; });
     }

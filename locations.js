@@ -1,15 +1,15 @@
 async function loadLocations(path) {
-    let locations
+    let locations = []
     let response = await fetch("locations.csv");
     if (response.status != 200) {
         throw new Error("Server Error");
     }
     let text_data = await response.text();
     text_data.split("\n").forEach(function (value) {
-        var coordinates = value.split(";")
+        let coordinates = value.split(";")
         locations.push(L.latLng(Number(coordinates[0]), Number(coordinates[1])));
     })
-    var markers
+    let markers = []
     locations.foreach(function (value) {
         markers.push(L.marker(value, { icon: trashcanIcon }));
     })

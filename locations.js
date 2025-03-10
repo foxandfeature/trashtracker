@@ -9,7 +9,6 @@ async function loadLocations() {
         let coordinates = value.split(";")
         locations.push(L.latLng(Number(coordinates[0]), Number(coordinates[1])));
     })
-    console.log(locations)
     let markers = []
     locations.forEach(function (value) {
         markers.push(L.marker(value, { icon: trashcanIcon }));

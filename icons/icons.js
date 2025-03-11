@@ -1,6 +1,6 @@
 const locationIcon = L.divIcon({
     className: "location-marker-div",
-    html: "<span class=\"material-symbols-outlined\" id=\"location-marker-icon\">arrow_circle_up</span>"
+    html: "<img id=\"location-marker-icon\" src=\"icons\\location_marker.svg\"><img id=\"direction-marker-icon\" src=\"icons\\direction_marker.svg\"></img></img>"
 });
 const trashcanIcon = L.icon({
     iconUrl: 'icons/trashcan_marker.svg',

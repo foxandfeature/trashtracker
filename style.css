@@ -18,10 +18,19 @@ body {
     position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) rotate(0deg);
-    font-variation-settings: 'FILL' 1;
-    color: dodgerblue;
-    font-size: 48px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;   
+}
+#direction-marker-icon {
+    visibility: hidden;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;;
+    transform: translate(-50%, 0);
+    width: 40px;
+    height: 40px;
+    z-index: -1;
 }
 
 #location-button {

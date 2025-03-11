@@ -15,7 +15,7 @@ function startCompass() {
             window.addEventListener("deviceorientation", deviceOrientationhHandler, true);
             compassActive = true
           }
-          else{
+          else {
             alert("User denied")
             document.getElementById("ios-magnetometer-request-menu").style.visibility = "hidden";
           }
@@ -32,13 +32,11 @@ function startCompass() {
 function deviceOrientationhHandler(e) {
 
   compassRotation = e.webkitCompassHeading || Math.abs(e.alpha - 360);
-  let locationMarkerIcon = document.getElementById('location-marker-icon')
   let directionMarkerIcon = document.getElementById('direction-marker-icon')
-  if (locationMarkerIcon != null) {
-    locationMarkerIcon.style.transform = `translate(-50%, -50%) rotate(${compassRotation}deg)`;
-  }
-  if (directionMarkerIcon != null && directionMarkerIcon.style['visibility'] == 'hidden'){
-    directionMarkerIcon.style['visibility'] = 'visible'
+  if (directionMarkerIcon != null) {
+    directionMarkerIcon.style.transform = `translate(-50%, -10px) rotate(${compassRotation}deg)`;
+    directionMarkerIconstyle.visibility = "visible"
+
   }
 }
 

@@ -14,7 +14,6 @@ function startCompass() {
             document.getElementById("ios-magnetometer-request-menu").style.visibility = "hidden";
             window.addEventListener("deviceorientation", deviceOrientationhHandler, true);
             compassActive = true
-            directionMarkerIcon.style.visibility = "visible"
           }
           else {
             alert("User denied")
@@ -26,7 +25,6 @@ function startCompass() {
     else {
       window.addEventListener("deviceorientationabsolute", deviceOrientationhHandler, true);
       compassActive = true
-      directionMarkerIcon.style.visibility = "visible"
     }
   }
 }
@@ -37,6 +35,9 @@ function deviceOrientationhHandler(e) {
   let directionMarkerIcon = document.getElementById('direction-marker-icon')
   if (directionMarkerIcon != null) {
     directionMarkerIcon.style.transform = `translate(-50%, -10px) rotate(${compassRotation}deg)`;
+  }
+  if (compassActive && directionMarkerIcon.style.visibility != "visible"){
+    directionMarkerIcon.style.visibility = "visible"
   }
 }
 

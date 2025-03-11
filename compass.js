@@ -35,10 +35,11 @@ function deviceOrientationhHandler(e) {
   let directionMarkerIcon = document.getElementById('direction-marker-icon')
   if (directionMarkerIcon != null) {
     directionMarkerIcon.style.transform = `translate(-50%, -10px) rotate(${compassRotation}deg)`;
+    if (compassActive && directionMarkerIcon.style.visibility != "visible") {
+      directionMarkerIcon.style.visibility = "visible"
+    }
   }
-  if (compassActive && directionMarkerIcon.style.visibility != "visible"){
-    directionMarkerIcon.style.visibility = "visible"
-  }
+
 }
 
 if (window.DeviceOrientationEvent) {

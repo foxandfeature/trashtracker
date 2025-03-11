@@ -7,7 +7,7 @@
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "main_icon.svg",
+      "src": "https://raw.githubusercontent.com/foxandfeature/trashtracker/refs/heads/main/icons/main_icon.svg",
       "sizes": "any"
     }
   ]

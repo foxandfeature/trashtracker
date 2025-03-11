@@ -30,17 +30,13 @@ function startCompass() {
 }
 
 function deviceOrientationhHandler(e) {
-
   compassRotation = e.webkitCompassHeading || Math.abs(e.alpha - 360);
-  let directionMarkerIcon = document.getElementById('direction-marker-icon')
-  if (directionMarkerIcon != null) {
-    directionMarkerIcon.style.transform = `translate(-50%, -10px) rotate(${compassRotation}deg)`;
-    if (compassActive && directionMarkerIcon.style.visibility != "visible") {
-      directionMarkerIcon.style.visibility = "visible"
-    }
-  }
-
+  locationMarkerDiv.style.transform = `translate(-50%, -50%) rotate(${compassRotation}deg)`;
+  /*if (compassActive && directionMarkerDiv.style.visibility != "visible") {
+    directionMarkerImg.style.visibility = "visible"
+  }*/
 }
+
 
 if (window.DeviceOrientationEvent) {
   startCompass()

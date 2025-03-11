@@ -4,6 +4,6 @@ const locationIcon = L.divIcon({
 });
 const trashcanIcon = L.icon({
     iconUrl: 'icons/trashcan_marker.svg',
-    iconSize: [30, 30],
-    iconAnchor: [15, 30],
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
 });

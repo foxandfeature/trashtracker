@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     width: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 #map {
@@ -29,10 +30,24 @@ body {
     left: 50%;
     width: 60px;
     height: 60px;
+    color: #55996f;
     background-color: white;
+    font-variation-settings: 'FILL' 1;
     border: 0;
     border-radius: 10px;
     transform: translate(-50%, -50%);
+}
+
+#banner{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    height: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 #ios-magnetometer-request-menu{
@@ -41,14 +56,24 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
+    width: 320px;
+    height: 120px;
+    padding: 20px;
     background-color: white;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    justify-content: space-between;
+}
+
+#ios-magnetometer-request-menu-text{
+    margin: 0;
 }
 
 #ios-magnetometer-request-menu-button{
     height: 40px;
+    background-color: #55996f;
+    color: white;
+    border-radius: 10px;
+    border: 0;
 }

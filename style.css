@@ -23,6 +23,7 @@ body {
     height: 30px;   
 }
 #direction-marker-icon {
+    visibility: hidden;
     position: absolute;
     left: 50%;
     bottom: 0px;

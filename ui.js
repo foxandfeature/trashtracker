@@ -1,4 +1,4 @@
-document.getElementById("location-button").onclick = function () {
+document.getElementById('location-button').onclick = function () {
     if (userLocation == null) {
         locate()
     }

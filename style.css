@@ -57,7 +57,7 @@ body {
     width: 150px;
     padding: 20px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     justify-content: center;
 }
 

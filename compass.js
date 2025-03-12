@@ -10,36 +10,39 @@ function startCompass() {
     if (isIOS) {
       DeviceOrientationEvent.requestPermission()
         .then((response) => {
-          if (response === "granted") {
-            document.getElementById("ios-magnetometer-request-menu").style.visibility = "hidden";
-            window.addEventListener("deviceorientation", deviceOrientationhHandler, true);
+          if (response === 'granted') {
+            document.getElementById('ios-magnetometer-request-menu').style.visibility = 'hidden';
+            window.addEventListener('deviceorientation', deviceOrientationhHandler, true);
             compassActive = true
           }
           else {
-            alert("User denied")
-            document.getElementById("ios-magnetometer-request-menu").style.visibility = "hidden";
+            document.getElementById('ios-magnetometer-request-menu').style.visibility = 'hidden';
           }
         })
-        .catch(() => { document.getElementById("ios-magnetometer-request-menu").style.visibility = "visible"; });
+        .catch(() => { document.getElementById('ios-magnetometer-request-menu').style.visibility = 'visible'; });
     }
     else {
-      window.addEventListener("deviceorientationabsolute", deviceOrientationhHandler, true);
+      window.addEventListener('deviceorientationabsolute', deviceOrientationhHandler, true);
       compassActive = true
     }
   }
 }
 
+var minDeviceOrientationEvents = 1
 function deviceOrientationhHandler(e) {
-  compassRotation = e.webkitCompassHeading || Math.abs(e.alpha - 360);
-  locationMarkerDiv.style.transform = `translate(-50%, -50%) rotate(${compassRotation}deg)`;
-  /*if (compassActive && directionMarkerDiv.style.visibility != "visible") {
-    directionMarkerImg.style.visibility = "visible"
-  }*/
+  if (minDeviceOrientationEvents == 0) {
+    compassRotation = e.webkitCompassHeading || Math.abs(e.alpha - 360);
+    locationMarkerDiv.style.transform = `translate(-50%, -50%) rotate(${compassRotation}deg)`;
+    if (compassActive && directionMarkerImg.style.visibility != 'visible') {
+      directionMarkerImg.style.visibility = 'visible'
+    }
+  }
+  else {
+    minDeviceOrientationEvents -= 1;
+  }
 }
 
 
 if (window.DeviceOrientationEvent) {
   startCompass()
 }
-
-

@@ -1,4 +1,4 @@
-var map = L.map('map', { zoomControl: false }).setView([52.265160276113164, 9.761516161742293], 15);
+var map = L.map('map', { zoomControl: false }).setView([52.265160276113164, 9.761516161742293], 12);
 var userLocation = null
 let locationMarker = null
 

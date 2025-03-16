@@ -1,17 +1,19 @@
 async function loadLocations() {
-    let response = await fetch('locations.csv');
+    const response = await fetch('locations.csv');
     if (response.status != 200) {
         throw new Error('Server Error');
     }
-    let text_data = await response.text();
-    let markers = []
+    const text_data = await response.text();
+    const markers = []
     text_data.split('\n').forEach(function (value) {
         if (value.charAt(0) != '#') {
-            let content = value.split(';')
-            let marker = L.marker(L.latLng(Number(content[1]), Number(content[2])), { icon: trashcanIcon })
+            const content = value.split(';')
+            const marker = L.marker(L.latLng(Number(content[1]), Number(content[2])), { icon: trashcanIcon })
             markers.push(marker);
             marker.bindPopup(async function (layer) {
-                return await getMarkerContent(content[0])
+                const divElement = document.createElement('div')
+                loadPopUpContent(content[0], divElement)
+                return divElement
             }, { minWidth: 200, autoPanPadding: L.point(20, 20) })
         }
     })
@@ -19,14 +21,16 @@ async function loadLocations() {
 }
 loadLocations()
 
-async function getMarkerContent(id, layer) {
+async function loadPopUpContent(id, container) {
     let response = await fetch('photos/' + content[0] + '.svg')
     if (!response.ok) {
-        return 'Für diesen Mülleimer ist leider noch kein Foto verfügbar';
+        const spanElement = document.createElement('span')
+        spanElement.content = 'Für diesen Mülleimer ist leider noch kein Foto verfügbar';
+        container.appendChild(spanElement)
     }
     const imageBlob = await response.blob();
     const imageUrl = URL.createObjectURL(imageBlob);
     const imgElement = document.createElement('img');
     imgElement.src = imageUrl;
-    return imgElement;
+    container.appendChild(imgElement);
 }

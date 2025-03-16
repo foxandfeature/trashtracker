@@ -4,12 +4,12 @@ async function loadLocations() {
         throw new Error('Server Error');
     }
     const text_data = await response.text();
-    const markers = []
+    var markers = L.markerClusterGroup();
     text_data.split('\n').forEach(function (value) {
         if (value.charAt(0) != '#') {
             const content = value.split(';')
             const marker = L.marker(L.latLng(Number(content[1]), Number(content[2])), { icon: trashcanIcon })
-            markers.push(marker);
+            markers.addLayer(marker);
             marker.bindPopup(function (layer) {
                 const divElement = document.createElement('div')
                 loadPopUpContent(content[0], divElement)
@@ -17,7 +17,7 @@ async function loadLocations() {
             }, { minWidth: 200, autoPanPadding: L.point(20, 20) })
         }
     })
-    L.layerGroup(markers).addTo(map);
+    map.addLayer(markers);
 }
 loadLocations()
 

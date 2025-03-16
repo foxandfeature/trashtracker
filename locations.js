@@ -10,7 +10,7 @@ async function loadLocations() {
             const content = value.split(';')
             const marker = L.marker(L.latLng(Number(content[1]), Number(content[2])), { icon: trashcanIcon })
             markers.push(marker);
-            marker.bindPopup(async function (layer) {
+            marker.bindPopup(function (layer) {
                 const divElement = document.createElement('div')
                 loadPopUpContent(content[0], divElement)
                 return divElement
@@ -22,7 +22,7 @@ async function loadLocations() {
 loadLocations()
 
 async function loadPopUpContent(id, container) {
-    let response = await fetch('photos/' + content[0] + '.svg')
+    let response = await fetch('photos/' + id + '.svg')
     if (!response.ok) {
         const spanElement = document.createElement('span')
         spanElement.content = 'Für diesen Mülleimer ist leider noch kein Foto verfügbar';

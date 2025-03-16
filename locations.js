@@ -25,12 +25,14 @@ async function loadPopUpContent(id, container) {
     let response = await fetch('photos/' + id + '.svg')
     if (!response.ok) {
         const spanElement = document.createElement('span')
-        spanElement.content = 'Für diesen Mülleimer ist leider noch kein Foto verfügbar';
+        spanElement.appendChild(document.createTextNode('Für diesen Mülleimer ist leider noch kein Foto verfügbar'));
         container.appendChild(spanElement)
     }
-    const imageBlob = await response.blob();
-    const imageUrl = URL.createObjectURL(imageBlob);
-    const imgElement = document.createElement('img');
-    imgElement.src = imageUrl;
-    container.appendChild(imgElement);
+    else {
+        const imageBlob = await response.blob();
+        const imageUrl = URL.createObjectURL(imageBlob);
+        const imgElement = document.createElement('img');
+        imgElement.src = imageUrl;
+        container.appendChild(imgElement);
+    }
 }

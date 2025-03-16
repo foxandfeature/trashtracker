@@ -4,16 +4,14 @@ async function loadLocations() {
         throw new Error('Server Error');
     }
     let text_data = await response.text();
-    let locations = []
+    let markers = []
     text_data.split('\n').forEach(function (value) {
         if (value.charAt(0) != '#') {
-            let coordinates = value.split(';')
-            locations.push(L.latLng(Number(coordinates[0]), Number(coordinates[1])));
+            let content = value.split(';')
+            let marker = L.marker(L.latLng(Number(content[1]), Number(content[2])), { icon: trashcanIcon })
+            markers.push(marker);
+            marker.bindPopup('<img src=\'photos/'+ content[0] + '.svg\'>')
         }
-    })
-    let markers = []
-    locations.forEach(function (value) {
-        markers.push(L.marker(value, { icon: trashcanIcon }));
     })
     L.layerGroup(markers).addTo(map);
 }

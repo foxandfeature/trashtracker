@@ -22,7 +22,7 @@ async function loadLocations() {
 loadLocations()
 
 async function loadPopUpContent(id, container) {
-    let response = await fetch('photos/' + id + '.svg')
+    let response = await fetch('photos/' + id + '.jpg')
     if (!response.ok) {
         const spanElement = document.createElement('span')
         spanElement.appendChild(document.createTextNode('Für diesen Mülleimer ist leider noch kein Foto verfügbar'));

@@ -90,3 +90,7 @@ body {
     border-radius: 10px;
     border: 0;
 }
+
+#popup-image{
+    object-fit: contain;
+}

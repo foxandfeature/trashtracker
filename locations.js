@@ -34,6 +34,7 @@ async function loadPopUpContent(id, container) {
         const imageUrl = URL.createObjectURL(imageBlob);
         const imgElement = document.createElement('img');
         imgElement.src = imageUrl;
+        imgElement.id = 'popup-img'
         container.appendChild(imgElement);
     }
 }

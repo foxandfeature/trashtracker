@@ -12,6 +12,7 @@ async function loadLocations() {
             markers.addLayer(marker);
             marker.bindPopup(function (layer) {
                 const divElement = document.createElement('div')
+                divElement.id = 'popup-div'
                 loadPopUpContent(content[0], divElement)
                 return divElement
             }, { minWidth: 200, autoPanPadding: L.point(20, 20) })

@@ -40,5 +40,5 @@ async function loadPopUpContent(id, container) {
         imgElement.id = 'popup-img'
         container.appendChild(imgElement);
     }
-    container.removeChild(container.querySelector("#img-placeholder"))
+   //container.removeChild(container.querySelector("#img-placeholder"))
 }

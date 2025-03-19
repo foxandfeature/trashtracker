@@ -13,6 +13,9 @@ async function loadLocations() {
             marker.bindPopup(function (layer) {
                 const divElement = document.createElement('div')
                 divElement.id = 'popup-div'
+                const placeHolderImgElement = document.createElement('div')
+                placeHolderImgElement.id = 'img-placeholder'
+                divElement.appendChild(placeHolderImgElement)
                 loadPopUpContent(content[0], divElement)
                 return divElement
             }, { minWidth: 200, autoPanPadding: L.point(20, 20) })
@@ -37,4 +40,5 @@ async function loadPopUpContent(id, container) {
         imgElement.id = 'popup-img'
         container.appendChild(imgElement);
     }
+    container.removeChild(container.querySelector("#img-placeholder"))
 }

@@ -4,7 +4,7 @@ async function loadLocations() {
         throw new Error('Server Error');
     }
     const text_data = await response.text();
-    var markers = L.markerClusterGroup({maxClusterRadius:30});
+    var markers = L.featureGroup();
     text_data.split('\n').forEach(function (value) {
         if (value.charAt(0) != '#') {
             const content = value.split(';')

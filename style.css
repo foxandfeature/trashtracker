@@ -1,8 +1,13 @@
+:root {
+    --primary_color: #3cc56d;
+    --background_color: #ffffff;
+  }
+
 body {
     padding: 0;
     margin: 0;
     width: 0;
-    color: white;
+    color: var(--primary_color);
     font-family: "Roboto", sans-serif;
 }
 
@@ -40,8 +45,8 @@ body {
     left: 50%;
     width: 60px;
     height: 60px;
-    color: #55996f;
-    background-color: white;
+    color: var(--primary_color);
+    background-color: var(--background_color);
     font-variation-settings: 'FILL' 1;
     border: 0;
     border-radius: 10px;
@@ -57,7 +62,7 @@ body {
     height: 100px;
     width: 200px;
     padding: 0px;
-    background-color: #3cc56d;
+    background-color: var(--primary_color);
     border-radius: 0 0 10px 10px;
     justify-content: center;
 }
@@ -71,7 +76,7 @@ body {
     width: 320px;
     height: 120px;
     padding: 20px;
-    background-color: white;
+    background-color: var(--background_color);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -85,8 +90,8 @@ body {
 
 #ios-magnetometer-request-menu-button{
     height: 40px;
-    background-color: #55996f;
-    color: white;
+    background-color: var(--primary_color);
+    color: var(--background_color);
     border-radius: 10px;
     border: 0;
 }

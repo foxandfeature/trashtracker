@@ -3,8 +3,8 @@
   "name": "TrashTracker",
   "start_url": "https://foxandfeature.github.io/trashtracker/",
   "display": "standalone",
-  "theme_color": "#ffffff00",
-  "background_color": "#ffffff",
+  "theme_color": "#3cc56d",
+  "background_color": "#3cc56d",
   "icons": [
     {
       "src": "https://foxandfeature.github.io/trashtracker/icons/main_icon.svg",

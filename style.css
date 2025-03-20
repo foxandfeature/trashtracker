@@ -99,10 +99,14 @@ body {
 
 #popup-title{
     margin: 0;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 #popup-div {
     width: 210px;
+    display: flex;
+    justify-content: center;
 }
 
 #popup-img {
@@ -113,6 +117,7 @@ body {
 #popup-img-div {
     width: 210px;
     height: 280px;
+    margin-top: 20px;
     background-color: lightgray;
     animation: fade-in 1s linear 0s infinite alternate;
 }

@@ -101,6 +101,7 @@ body {
     margin: 0;
     font-weight: bold;
     font-size: 30px;
+    text-align: center;
 }
 
 #popup-div {
@@ -118,7 +119,7 @@ body {
 #popup-img-div {
     width: 210px;
     height: 280px;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: lightgray;
     animation: fade-in 1s linear 0s infinite alternate;
 }

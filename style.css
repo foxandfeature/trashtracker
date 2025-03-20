@@ -113,7 +113,7 @@ body {
 
 #popup-img {
     width: 100%;
-    animation: fade-in 0.5s linear 0s 1;
+    animation: fade-in 500ms linear;
 }
 
 #popup-img-div {

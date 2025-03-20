@@ -107,6 +107,7 @@ body {
     width: 210px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 #popup-img {

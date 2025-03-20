@@ -15,7 +15,7 @@ function onLocationFound(e) {
         map.setView(userLocation, 18, { animate: true })
     }
     if (locationMarker == null) {
-        locationMarker = L.marker(userLocation, { icon: locationIcon })
+        locationMarker = L.marker(userLocation, { icon: locationIcon, zIndexOffset: 1000 })
         locationMarker.addTo(map)
     }
     else {

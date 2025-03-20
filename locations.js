@@ -8,15 +8,17 @@ async function loadLocations() {
     text_data.split('\n').forEach(function (value) {
         if (value.charAt(0) != '#') {
             const content = value.split(';')
-            const marker = L.marker(L.latLng(Number(content[1]), Number(content[2])), { icon: trashcanIcon })
+            const marker = L.marker(L.latLng(Number(content[2]), Number(content[3])), { icon: trashcanIcon })
             markers.addLayer(marker);
             marker.bindPopup(function (layer) {
                 const divElement = document.createElement('div')
                 divElement.id = 'popup-div'
-                const placeHolderImgElement = document.createElement('div')
-                placeHolderImgElement.id = 'img-placeholder'
-                divElement.appendChild(placeHolderImgElement)
-                loadPopUpContent(content[0], divElement)
+                const textElement = document.createElement('p')
+                textElement.id = 'popup-title'
+                textElement.appendChild(document.createTextNode(content[1]))
+                if (content[4] == 'true') {
+                    loadImg(content[0], divElement)
+                }
                 return divElement
             }, { minWidth: 200, autoPanPadding: L.point(20, 20) })
         }
@@ -25,20 +27,19 @@ async function loadLocations() {
 }
 loadLocations()
 
-async function loadPopUpContent(id, container) {
+async function loadImg(id, container) {
+    const imgDivElement = document.createElement('div')
+    imgDivElement.id = 'popup-img-div'
+    container.appendChild(imgDivElement)
     let response = await fetch('photos/' + id + '.jpg')
-    if (!response.ok) {
-        const spanElement = document.createElement('span')
-        spanElement.appendChild(document.createTextNode('Für diesen Mülleimer ist leider noch kein Foto verfügbar'));
-        container.appendChild(spanElement)
-    }
-    else {
-        const imageBlob = await response.blob();
-        const imageUrl = URL.createObjectURL(imageBlob);
-        const imgElement = document.createElement('img');
-        imgElement.src = imageUrl;
-        imgElement.id = 'popup-img'
-        container.appendChild(imgElement);
-    }
-   container.removeChild(container.querySelector("#img-placeholder"))
+    const imageBlob = await response.blob();
+    const imageUrl = URL.createObjectURL(imageBlob);
+    const imgElement = document.createElement('img');
+    imgElement.src = imageUrl;
+    imgElement.id = 'popup-img'
+    imgDivElement.appendChild(imgElement);
+    setTimeout(function () {
+        imgDivElement.style.animation = 'none';
+    }, 500);
+
 }

@@ -98,21 +98,21 @@ body {
 }
 
 #popup-title{
-    
+    margin: 0;
 }
 
 #popup-div {
-    width: 60px;
+    width: 210px;
 }
 
 #popup-img {
     width: 100%;
-    animation: fade-in 1s linear 0s 1;
+    animation: fade-in 0.5s linear 0s 1;
 }
 
 #popup-img-div {
-    width: 60px;
-    height: 80px;
+    width: 210px;
+    height: 280px;
     background-color: lightgray;
     animation: fade-in 1s linear 0s infinite alternate;
 }

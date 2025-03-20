@@ -113,7 +113,7 @@ body {
 
 #popup-img {
     width: 100%;
-    animation: fade-in 500ms linear;
+    animation: fade-in 0.5s linear;
 }
 
 #popup-img-div {
@@ -121,7 +121,7 @@ body {
     height: 280px;
     margin-top: 10px;
     background-color: lightgray;
-    animation: fade-in 1s linear 0s infinite alternate;
+    animation: pulse 1s linear 0s infinite alternate;
 }
 
 @keyframes fade-in {
@@ -131,5 +131,15 @@ body {
 
     to {
         opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    from {
+        background-color: var(--background_color);
+    }
+
+    to {
+        background-color: lightgray;
     }
 }

@@ -20,7 +20,7 @@ async function loadLocations() {
                     loadImg(content[0], divElement)
                 }
                 return divElement
-            }, { minWidth: 200, autoPanPadding: L.point(20, 20) })
+            }, { minWidth: 0, autoPanPadding: L.point(20, 20) })
         }
     })
     map.addLayer(markers);

@@ -8,7 +8,7 @@ body {
     margin: 0;
     width: 0;
     color: var(--primary_color);
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 #map {
@@ -75,7 +75,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 320px;
-    height: 120px;
+    height: 160px;
     padding: 20px;
     background-color: var(--background_color);
     border-radius: 10px;

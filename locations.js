@@ -16,6 +16,7 @@ async function loadLocations() {
                 const textElement = document.createElement('p')
                 textElement.id = 'popup-title'
                 textElement.appendChild(document.createTextNode(content[1]))
+                divElement.appendChild(textElement)
                 if (content[4] == 'true') {
                     loadImg(content[0], divElement)
                 }

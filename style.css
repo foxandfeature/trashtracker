@@ -41,7 +41,7 @@ body {
 }
 
 #location-button {
-    position: fixed;
+    position: absolute;
     bottom: 10px;
     left: 50%;
     width: 60px;
@@ -52,6 +52,21 @@ body {
     border: 0;
     border-radius: 10px;
     transform: translate(-50%, -50%);
+}
+
+#share-button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 60px;
+    height: 60px;
+    color: var(--background_color);
+    background-color: var(--primary_color);
+    font-variation-settings: 'FILL' 1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #banner {

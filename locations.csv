@@ -1,4 +1,4 @@
-id,displayname;longitude;latitude;photo-available
+id;displayname;longitude;latitude;photo-available
 reden-ihssengasse-nord;-;52.28166572246294;9.783117034856605;true
 reden-ihssengasse-süd;-;52.28155766651593;9.783284892173134;true
 reden-stromkasten;-;52.28117768279931;9.784511808326458;true

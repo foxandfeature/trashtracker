@@ -5,8 +5,8 @@ async function loadLocations() {
     }
     const text_data = await response.text();
     var markers = L.featureGroup();
-    text_data.split('\n').forEach(function (value) {
-        if (value.charAt(0) != '#') {
+    text_data.split('\n').forEach(function (value, idx) {
+        if (idx != 0) {
             const content = value.split(';')
             const marker = L.marker(L.latLng(Number(content[2]), Number(content[3])), { icon: trashcanIcon })
             markers.addLayer(marker);

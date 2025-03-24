@@ -11,6 +11,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 #map {
     position: fixed;
     top: 0;
@@ -54,35 +58,43 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#share-button {
+#banner-wrapper {
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 50px;
-    height: 50px;
-    color: var(--background_color);
-    background-color: var(--primary_color);
-    font-variation-settings: 'FILL' 1;
-    border-bottom-left-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#banner {
-    position: fixed;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
     display: flex;
+    align-items: center;
+    background-color: var(--primary_color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#banner {
+    display: flex;
     height: 50px;
     width: 200px;
     padding: 0px;
-    background-color: var(--primary_color);
-    border-radius: 0 0 10px 10px;
 }
 
-#banner-img{
+#seperator {
+    width: 2px;
+    height: 30px;
+    background-color: var(--background_color);
+}
+
+#camera-button {
+    width: 50px;
+    height: 50px;
+    color: var(--background_color);
+    font-variation-settings: 'FILL' 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+#banner-img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -119,7 +131,7 @@ body {
     border: 0;
 }
 
-#popup-title{
+#popup-title {
     margin: 0;
     font-weight: bold;
     font-size: 30px;

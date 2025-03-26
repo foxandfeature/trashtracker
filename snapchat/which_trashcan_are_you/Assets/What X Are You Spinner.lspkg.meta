@@ -1,4 +1,4 @@
-- !<AssetImportMetadata/70aa1015-1446-448a-ba87-2d9e8ac323ad>
+- !<AssetImportMetadata/ba073c0d-1300-475e-a234-f9bca5f70004>
   ImportedAssetIds:
     {}
   ImporterName: NativePackageImporter
@@ -6,7 +6,7 @@
   PackageType: PackedNativePackageRoot
   PackagePolicy: CanBeUnpacked
   ExtraData:
-    AssetLibraryId: 7rsN23xahIPaaFuj6yTOGq
+    {}
   AssetDataMap:
     {}
   DependentFiles:

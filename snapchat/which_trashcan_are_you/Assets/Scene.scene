@@ -2,7 +2,6 @@
   PackagePath: ""
   objects:
     - !<own> 00000000-0000-0065-0000-000000000064
-    - !<own> 0005641c-028d-459a-0000-000000014b4d
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -56,122 +55,6 @@
   DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
   MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
   RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/0005641c-028d-459a-0000-000000014b4d>
-  PrefabRemaps:
-    []
-  Name: Lighting
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 00056e79-b066-62ca-0000-000000001406
-    - !<own> 0005641c-028d-4630-0000-000000014b56
-  Components:
-    []
-- !<SceneObject/0005641c-028d-4630-0000-000000014b56>
-  PrefabRemaps:
-    []
-  Name: Light
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 40.000000, y: 85.000000, z: 20.000000}
-    rotation: {x: 70.000000, y: 10.000000, z: 150.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 0005641c-028d-463e-0000-000000014b59
-- !<LightSource/0005641c-028d-463e-0000-000000014b59>
-  PrefabRemaps:
-    []
-  Name: Light Source
-  Enabled: true
-  renderLayer: 1835007
-  LightType: Directional
-  Intensity: 1.000000
-  CastShadows: false
-  ShadowDensity: 0.440000
-  ShadowBlurRadius: 4.000000
-  ShadowTextureSize: 512
-  AutoLightSourcePosition: true
-  AutoShadowFrustumSize: true
-  AutoShadowFrustumSizeExtend: 2.000000
-  ShadowFrustumSize: 30.000000
-  ShadowFrustumNearClipPlane: 1.000000
-  ShadowFrustumFarClipPlane: 1000.000000
-  UseEnvMapFromCamera: false
-  EnvMapFromCameraMode: Auto
-  EstimationSharpness: 1.000000
-  EnvMapExposure: 1.000000
-  EnvMapRotation: 0.000000
-  DiffuseEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
-  SpecularEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
-  Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-  DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
-  InnerConeAngle: 0.000000
-  OuterConeAngle: 45.000000
-  DecayType: None
-  DecayLimit: false
-  DecayRange: 40.000000
-  UseEstimation: false
-  EstimationIntensity: !<float> 1.000000
-- !<SceneObject/00056e79-b066-62ca-0000-000000001406>
-  PrefabRemaps:
-    []
-  Name: Envmap
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 65.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 00056e79-b066-62f1-0000-000000001409
-- !<LightSource/00056e79-b066-62f1-0000-000000001409>
-  PrefabRemaps:
-    []
-  Name: Light Source
-  Enabled: true
-  renderLayer: 1835007
-  LightType: EnvMap
-  Intensity: 1.000000
-  CastShadows: false
-  ShadowDensity: 1.000000
-  ShadowBlurRadius: 0.000000
-  ShadowTextureSize: 512
-  AutoLightSourcePosition: false
-  AutoShadowFrustumSize: false
-  AutoShadowFrustumSizeExtend: 2.000000
-  ShadowFrustumSize: 30.000000
-  ShadowFrustumNearClipPlane: 1.000000
-  ShadowFrustumFarClipPlane: 1000.000000
-  UseEnvMapFromCamera: false
-  EnvMapFromCameraMode: Auto
-  EstimationSharpness: 1.000000
-  EnvMapExposure: 1.000000
-  EnvMapRotation: 0.000000
-  DiffuseEnvTexture: !<reference> 2013a19b-93c1-4f21-b7ea-876a33550c7b
-  SpecularEnvTexture: !<reference> d795fd46-e16b-4cb9-8dfb-4ef227298f7a
-  Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
-  DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
-  InnerConeAngle: 0.000000
-  OuterConeAngle: 45.000000
-  DecayType: None
-  DecayLimit: false
-  DecayRange: 40.000000
-  UseEstimation: false
-  EstimationIntensity: !<float> 1.000000
 - !<SceneObject/069b84e9-0d89-4513-ae04-b51d93d4df08>
   PrefabRemaps:
     []
@@ -188,6 +71,22 @@
     - !<own> cdf488d6-21c4-46b1-b8bf-35995452db9c
   Components:
     - !<own> 85b36d79-0a59-4456-8179-7ffaa963da1d
+- !<ScriptComponent/0badb62b-a31b-4d10-9408-6b6e3896d949>
+  PrefabRemaps:
+    []
+  Name: ContentLoader
+  Enabled: true
+  ScriptAsset: !<reference> 58370a0c-0fa3-4d07-a6a1-dbf3aeb04bea
+  ScriptInputsDefault:
+    remoteServiceModule: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      remoteServiceModule: !<reference.RemoteServiceModule> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/3ac9ead8-066c-4510-a8eb-d74a6f74d133>
   PrefabRemaps:
     []
@@ -899,25 +798,7 @@
     top: 0.000000
 - !<SceneObject/592f8de5-4502-4216-bf07-1b07b036fdec>
   PrefabRemaps:
-    - 069b84e9-0d89-4513-ae04-b51d93d4df08: 1bb1e71a-c126-4c7a-b16e-dcd0c0d04068
-    - 3ac9ead8-066c-4510-a8eb-d74a6f74d133: 536ee161-7d9f-4217-9bc5-ee675c1af463
-    - 41173060-39d2-4062-911a-c0a8bcd7496a: bb25d800-3138-4470-bb57-0d8aa48c6abc
-    - 46428a25-d069-4737-a40c-3dbe1e595fc0: 0e69d359-2d7a-451c-a1a4-4525f101c39f
-    - 592f8de5-4502-4216-bf07-1b07b036fdec: 81500669-48f9-4e0b-9e79-453faec4973b
-    - 66acb79a-e1e8-4b90-a6e0-59ba4304e0bd: c0dd5b09-e58e-442b-8ffb-e00bc73b4719
-    - 6af0dd1d-a629-4ddd-b60a-fecdf74de1e8: b4239d0d-19da-4964-86de-78bb14ef59de
-    - 721f9508-727d-420d-a458-c5b6f0c8b53e: dfebb399-44c6-4dfb-b7c4-f93d4a1bbdb3
-    - 759a14be-c5eb-42c0-b6da-bb19928173ed: 1a0c4959-afe8-49e7-9971-aedda8e18bf5
-    - 7a4c8778-b428-470c-971d-2f4c452aaba5: 8a546dc6-4304-4d7f-94f5-9fb33e98c482
-    - 85b36d79-0a59-4456-8179-7ffaa963da1d: 73b597c7-b6c4-4c16-9d9f-b635cecb5192
-    - 97e05f46-103b-47bc-ba0a-63b39ac22b72: 13572f83-7951-46e4-a63e-e7d84d0a0fc8
-    - 9c944501-9144-4da9-b078-bc6dfb3383c1: 16adf4de-47e9-4b7d-a4e9-b295bfea7a20
-    - 9e697088-8840-4538-b230-ec632a65fc56: 87460edd-6a89-4c91-ad90-6735189ef068
-    - b33c76c7-860e-4c83-bc6c-0c124fc09ba3: 684cf6fc-9b75-4dd3-bf84-b08d6c95de26
-    - cdf488d6-21c4-46b1-b8bf-35995452db9c: fef0e2d2-e512-4164-88c6-114557ed522f
-    - d46f1b41-5aa3-471b-8edc-332b78652df4: 259a70ca-6857-45b6-9952-2b0657b7cfab
-    - f129d542-d4ee-4162-b854-5fee3ca0d4bd: 012a7d1d-228f-497e-9e64-aa32c0f1b00a
-    - f1756550-6eae-4ac6-8620-bd20efc7f530: c4fc7733-636c-4e0b-a9fe-3f456ba35c69
+    []
   Name: Spinner__PUT_UNDER_MAIN_CAM
   Enabled: true
   Layers: 1
@@ -1022,6 +903,7 @@
     []
   Components:
     - !<own> 9e697088-8840-4538-b230-ec632a65fc56
+    - !<own> 0badb62b-a31b-4d10-9408-6b6e3896d949
 - !<Head/85b36d79-0a59-4456-8179-7ffaa963da1d>
   PrefabRemaps:
     []
@@ -1202,6 +1084,7 @@
     defaultImage: true
     displayResultText: true
     hidePromptOnSpin: true
+    advanced: true
     delayBetweenImages: true
     delayBeforeStop: true
     resultImageDisplay: true
@@ -1210,11 +1093,11 @@
   ScriptInputs:
     "":
       displayPrompt: true
-      promptText: "What option are you?"
+      promptText: "Welcher Mülleimer bist du?"
       displayResultImage: false
       defaultImage: !<reference.Asset> 00000000-0000-0000-0000-000000000000
       displayResultText: true
-      defaultText: Tap to Find Out
+      defaultText: Tippe um es Herauszufinden
       content:
         - text: Option 1
           image: !<reference.Texture> 00000000-0000-0000-0000-000000000000
@@ -1227,7 +1110,7 @@
           color: !<Vec4> {x: 1.000000, y: 0.832349, z: 0.473213, w: 1.000000}
       setColorTextBg: true
       hidePromptOnSpin: false
-      advanced: false
+      advanced: true
       delayBetweenImages: 0.100000
       delayBeforeStop: 1.500000
       promptDisplay: !<reference.Text> 9c944501-9144-4da9-b078-bc6dfb3383c1

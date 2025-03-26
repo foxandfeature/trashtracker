@@ -14,4 +14,4 @@ jobs:
         with:
           python-version: '3.x'
       - name: Run location_converter.py
-        run: python trash
+        run: python snapchat/location_converter.py

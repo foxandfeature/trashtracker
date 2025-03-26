@@ -1,0 +1,8 @@
+declare namespace global {
+    var locations : Array<Array<string>>;
+}
+
+@component
+export class GlobalExample extends BaseScriptComponent {
+    locations = [['Franz','reden-ihssengasse-nord'],['Sissie','reden-ihssengasse-süd'],['Marvin','reden-stromkasten'],['-','reden-fuchsbach'],['Torben','reden-kindergarten-1'],['Liselotte','reden-kindergarten-2'],['Jason','reden-feuerwehr'],['Marie','reden-spielplatz'],['-','nordstraße-nord'],['-','nordstraße-süd-1'],['-','nordstraße-süd-2'],['-','bruchwiesenweg-1'],['-','bruchwiesenweg-2'],['-','spielplatz-bruchwiesen-1'],['-','spielplatz-bruchwiesen-2'],['-','spielplatz-bruchwiesen-3'],['-','spielplatz-bruchwiesen-4'],['-','spielplatz-bruchwiesen-5'],['-','hüpeder-bach'],['Ingrid','grundschule-1'],['-','grundschule-2'],['-','volksbank-1'],['-','volksbank-2'],['Olaf','vgh'],['Pepe','zum-dänen'],['-','burgweg'],['-','sparkasse'],['-','zob-1'],['-','zob-2'],['-','zob-3'],['-','zob-4'],['-','zob-5'],['-','rewe-1'],['-','rewe-2'],['-','friedhof'],['-','rathaus-1'],['-','rathaus-2'],['-','bahnstraße'],['Jürgen','kgs-pattensen-neuer-weg'],['Alfred','kgs-fahrradkäfig-1'],['Stella','kgs-fahrradkäfig-2'],['Marieke','kgs-fahrradkäfig-3'],['Jan','kgs-sporthalle-1'],['Henry','kgs-sporthalle-2'],['Kevin','kgs-neue-sporthalle-1'],['Mattheo','kgs-neue-sporthalle-2'],['Mario & Luigi','kgs-neue-sporthalle-3'],['Inge','kgs-a-hof-1'],['Rocky','kgs-a-hof-2'],['Paula','kgs-a-hof-3'],['Rick & Morty','kgs-b-hof-1'],['Bob','kgs-b-hof-2'],['Carl','kgs-sport-platz-1'],['Romeo & Julia','kgs-sport-platz-2'],['Mike','kgs-sport-platz-3'],['Chantal','kgs-sport-platz-4'],['Julian','kgs-sport-platz-5'],['Chico','kgs-sport-platz-6']]
+}

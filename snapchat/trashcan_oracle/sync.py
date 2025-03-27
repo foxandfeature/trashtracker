@@ -9,9 +9,8 @@ output_file = open("snapchat/trashcan_oracle/Assets/Locations.ts", "w")
 source_file = open("locations.csv", "r")
 template_file = open("snapchat/trashcan_oracle/Locations_template.ts", "r")
 
-if os.path.exists(img_output_directory):
-    shutil.rmtree(img_output_directory)
-os.makedirs(img_output_directory)
+if not os.path.exists(img_output_directory):
+    os.makedirs(img_output_directory)
 
 locations = source_file.read().split("\n")
 

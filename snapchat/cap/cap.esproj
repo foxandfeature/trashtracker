@@ -10,9 +10,9 @@ updateCheckpoint: 55
 sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
 viewConfig:
   simulation:
-    device: Galaxy S9
-    cameraFov: 39.098301
-    fullFrameAspect: 0.520700
+    device: No Simulation
+    cameraFov: 66.519997
+    fullFrameAspect: nan
     resolutionScale: 1.000000
     viewport: Maximized
     output: Live
@@ -24,7 +24,7 @@ metaInfo:
     []
   tags:
     []
-  lensName: Sticker
+  lensName: TrashTracker Cap
   lensDescriptors:
     []
   lensApplicability:

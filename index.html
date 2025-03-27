@@ -10,7 +10,7 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="icon" type="image/x-icon" href="icons/main_icon.svg">
     <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="map/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet"
@@ -19,12 +19,12 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="icons/icons.js"></script>
-    <script src="locations.js"></script>
+    <script src="map/locations.js"></script>
 </head>
 
 <body>
     <div id="map"></div>
-    <script src="map.js"></script>
+    <script src="map/map.js"></script>
     <button id="location-button" type="button">
         <span class="material-symbols-outlined">my_location</span>
     </button>
@@ -35,7 +35,7 @@
             </div>
         </a>
         <div id="seperator"></div>
-        <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=679b056bbbd74bd0a39f76693c3f7d3d&metadata=01">
+        <a href="https://foxandfeature.github.io/trashtracker/share">
             <div id="camera-button">
                 <span class="material-symbols-outlined">photo_camera</span>
             </div>
@@ -47,8 +47,8 @@
             Sensordaten zu gewähren.</p>
         <button id="ios-magnetometer-request-menu-button" onclick="startCompass()"><strong>Okay</strong></button>
     </div>
-    <script src="ui.js"></script>
-    <script src="compass.js"></script>
+    <script src="map/ui.js"></script>
+    <script src="map/compass.js"></script>
 </body>
 
 </html>

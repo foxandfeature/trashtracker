@@ -10,9 +10,9 @@ updateCheckpoint: 55
 sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
 viewConfig:
   simulation:
-    device: Galaxy S9
-    cameraFov: 39.098301
-    fullFrameAspect: 0.520700
+    device: iPhone 14 Pro
+    cameraFov: 45.709999
+    fullFrameAspect: 0.562500
     resolutionScale: 1.000000
     viewport: Maximized
     output: Live
@@ -24,7 +24,7 @@ metaInfo:
     []
   tags:
     []
-  lensName: Sticker
+  lensName: Smiley Tattoo
   lensDescriptors:
     []
   lensApplicability:
@@ -34,7 +34,7 @@ metaInfo:
     - Mobile
     - Web
   platformBundlesEnabled: false
-  iconHash: 57f39d672236abb3f2ca1b78b2e5bf57
+  iconHash: 68be2dfe101cfee9d31efdfec634e3e3
   videoPreviewHash: ""
   fromTemplateName: Default
   fromTemplateUrl: Lens Studio 5.7.2.25030805

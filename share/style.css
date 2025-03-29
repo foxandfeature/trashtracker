@@ -6,10 +6,19 @@
 body {
     background-color: var(--primary_color);
     font-family: "Poppins", sans-serif;
+    padding-top: 100px;
 }
 
 a {
     text-decoration: none;
+}
+
+#close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+    color: var(--background_color);
 }
 
 h1{

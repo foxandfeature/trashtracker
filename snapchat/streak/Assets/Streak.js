@@ -12,7 +12,6 @@ var streak = 0
 var streakIncreaseAviable = true
 
 function loadStreak(){
-   
     lastDateTime = Number(store.getString(lastDateKey))
     if (lastDateTime != 0){
         lastDate = new Date()

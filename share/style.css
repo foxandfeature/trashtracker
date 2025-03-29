@@ -3,32 +3,38 @@
     --background_color: #ffffff;
 }
 
-body{
+body {
     background-color: var(--primary_color);
+    font-family: "Poppins", sans-serif;
 }
 
-#lens-container {
-    margin: 50px;
-    display: flex;
-    flex-direction: row;
+a {
+    text-decoration: none;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    color: var(--background_color);
+}
+
+#button-wrapper {
+    width: 90%;
+    justify-self: center;
+    display: block;
+    text-align: center;
+}
+
+.lens-button {
+    width: 250px;
+    height: 250px;
+    color: var(--primary_color);
+    font-variation-settings:
+        'FILL' 1;
+    display: inline-flex;
+    margin: 30px;
     justify-content: center;
-    gap: 5%
+    align-items: center;
+    background-color: var(--background_color);
+    border-radius: 50px;
 }
-
-.snapchat-embed-iframe{
-    width: 30%;
-    height: 30w;
-}
-
-@media (max-width: 1100px) {
-    #lens-container {
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-        row-gap: 30px;
-    }
-    .snapchat-embed-iframe{
-        width: 100%;
-    }
-}
-

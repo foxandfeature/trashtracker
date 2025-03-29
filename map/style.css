@@ -75,15 +75,21 @@ a {
     height: 50px;
     width: 200px;
     padding: 0px;
+    justify-content: center;
+    align-items: center;
 }
 
-#seperator {
+#banner-img {
+    height: 75px;
+}
+
+.seperator {
     width: 2px;
     height: 30px;
     background-color: var(--background_color);
 }
 
-#camera-button {
+.link-button {
     width: 50px;
     height: 50px;
     color: var(--background_color);
@@ -94,13 +100,7 @@ a {
     border: 0;
 }
 
-#banner-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 75px;
-}
+
 
 #ios-magnetometer-request-menu {
     visibility: hidden;

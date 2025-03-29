@@ -24,7 +24,7 @@ metaInfo:
     []
   tags:
     []
-  lensName: Untitled
+  lensName: Müllsammle Streak
   lensDescriptors:
     []
   lensApplicability:
@@ -34,7 +34,7 @@ metaInfo:
     - Mobile
     - Web
   platformBundlesEnabled: false
-  iconHash: ""
+  iconHash: 57e1426f42181cb1577bcab5b3073fee
   videoPreviewHash: ""
   fromTemplateName: Default
   fromTemplateUrl: Lens Studio 5.7.2.25030805

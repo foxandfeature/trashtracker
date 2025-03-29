@@ -34,7 +34,7 @@ metaInfo:
     - Mobile
     - Web
   platformBundlesEnabled: false
-  iconHash: 57f39d672236abb3f2ca1b78b2e5bf57
+  iconHash: befba654cd340d6061aae1917685f6a8
   videoPreviewHash: ""
   fromTemplateName: Default
   fromTemplateUrl: Lens Studio 5.7.2.25030805

@@ -1,0 +1,16 @@
+- !<AssetImportMetadata/6171eb35-b4a1-478f-b658-8cbc3f146d51>
+  ImportedAssetIds:
+    ScanModule: !<reference> 69256215-722d-4e10-904b-fc63264296c1
+  ImporterName: ScanModuleImporter
+  PrimaryAsset: !<reference> 69256215-722d-4e10-904b-fc63264296c1
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000

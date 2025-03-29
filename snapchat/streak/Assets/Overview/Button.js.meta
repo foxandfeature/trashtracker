@@ -1,0 +1,41 @@
+- !<AssetImportMetadata/afbf43f6-5c56-4e6b-b6ff-28aebd8b7014>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> b65c3329-7f34-4f7f-b9f1-fe0a3e5ad8bb
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> b65c3329-7f34-4f7f-b9f1-fe0a3e5ad8bb
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> a14bfd9f-e343-4e9e-9cf9-27db57cd97e1
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/a14bfd9f-e343-4e9e-9cf9-27db57cd97e1>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 45446327-3bf6-4d16-ba54-4b2bfcf4b503
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    buttons: false
+    scanner: false
+  ScriptTypesHidden:
+    {}
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - increaseButton: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      buttons: !<RequiredType.Array[Component.ScriptComponent]> 00000000-0000-0000-0000-000000000000
+      Scanner: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      scanner: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

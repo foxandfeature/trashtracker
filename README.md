@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/foxandfeature/trashtracker"><img src="icons/banner.gif" alt="TrashTracker"/></a></p>
+<p align="center"><a href="https://github.com/foxandfeature/trashtracker"><img src="icons/readme-banner.gif" alt="TrashTracker"/></a></p>
 
 <p align="center"><strong>Eine interaktive Karte zum Auffinden öffentlicher Mülleimer</strong></p>
 

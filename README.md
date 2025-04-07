@@ -16,7 +16,7 @@
 Die App bietet eine interaktive Karte, auf der Nutzer:innen schnell und unkompliziert öffentliche Mülleimer in ihrer Umgebung finden können. Mit nur einem Klick lässt sich zusätzlich ein Bild des jeweiligen Mülleimers anzeigen, um die Orientierung vor Ort zu vereinfachen.
 
 ## Trailer  
-[Zum Trailer](https://github.com/user-attachments/assets/0f268e89-360d-44cd-9eaa-cc5892102f11)
+https://github.com/user-attachments/assets/54583a1b-9fd3-4405-acdd-6e6e3ba5b99d
 
 # Benutzung
 

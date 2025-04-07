@@ -1,4 +1,4 @@
-strasseid,displayname,latitude,longitude,photo-available
+id,displayname,latitude,longitude,photo-available
 reden-ihssengasse-nord,Franz,52.28166572246294,9.783117034856605,true
 reden-ihssengasse-sued,Sissie,52.28155766651593,9.783284892173134,true
 reden-stromkasten,Marvin,52.28117768279931,9.784511808326458,true
@@ -7,6 +7,7 @@ reden-kindergarten-1,Torben,52.282496001398464,9.781257743337205,true
 reden-kindergarten-2,Liselotte,52.2823788253346,9.781009581268538,true
 reden-feuerwehr,Jason,52.28239913837341,9.780482694056014,true
 reden-spielplatz,Marie,52.28236497804849,9.78025106604442,true
+reden-dorfstrasse,-,52.28304839702732,9.783235477337255,true
 spielplatz-bruesseler-strasse-1,Jannik,52.272159293245586,9.751737712528968,true
 spielplatz-bruesseler-strasse-2,Hannes,52.27232493713426,9.752146524409715,true
 spielplatz-bruesseler-strasse-3,Nils,52.272427562614155,9.75260152421872,true
@@ -16,6 +17,7 @@ spielplatz-usedomer-strasse-2,-,52.269471094974044,9.750283341045039,true
 hornfeld,Heidi,52.26922571494883,9.7478617817067,true
 spielplatz-horne,-,52.2689902781272,9.744505933519125,true
 spielplatz-gogericht,-,52.26733964234496,9.749008318102304,true
+spielplatz-archiv,-,52.26667087832544,9.745764404009655,true
 hiddestorfer-strasse-ost,-,52.26601262048298,9.750562111319766,true
 hiddestorfer-strasse-west,-,52.265545165222285,9.750491654049085,true
 pattenser-bad,-,52.26386615439506,9.747291709076023,true

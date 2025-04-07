@@ -1,4 +1,4 @@
-# ![icon](https://github.com/user-attachments/assets/5f1aa892-a40d-4b44-a8b7-bff3f5f4e3a4)
+<p align="center"><a href="https://github.com/foxandfeature/trashtracker"><img src="icons/banner.gif" alt="TrashTracker"/></a></p>
 
 <p align="center"><strong>Eine interaktive Karte zum Auffinden öffentlicher Mülleimer</strong></p>
 

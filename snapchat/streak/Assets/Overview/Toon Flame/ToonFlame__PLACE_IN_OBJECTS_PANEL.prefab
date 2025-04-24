@@ -1,0 +1,41 @@
+- !<ObjectPrefab/fc5e03df-9c2d-420d-9af9-047be967c880>
+  PackagePath: ""
+  objects:
+    - !<own> ce5b47a9-691a-4805-adc4-fbd212e58229
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/6906f966-e9db-4af2-8f08-10e59a37b585>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual 1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 779980ff-58e1-42c2-ba36-02911c4de2e1
+  Mesh: !<reference> 655f2bc4-5449-4d9b-bb71-ee81b8030c73
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/ce5b47a9-691a-4805-adc4-fbd212e58229>
+  PrefabRemaps:
+    []
+  Name: Toon Flame
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6906f966-e9db-4af2-8f08-10e59a37b585

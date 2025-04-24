@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/f3a8fd70-323d-48cf-bfeb-c43e93d97134>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> ab274ca4-d300-4f03-8011-eb9d43d940d1
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> ab274ca4-d300-4f03-8011-eb9d43d940d1
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 1e786310-0761-4dc6-b310-7cec8c562dec
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/1e786310-0761-4dc6-b310-7cec8c562dec>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: ba569e61-4b6a-48b1-8bef-42e12cd78d14
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    increaseButton: false
+    startButton: false
+    streakCounter: false
+    streakCounterText: false
+  ScriptTypesHidden:
+    {}
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - streakCounter: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      streakCounterText: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      button: !<RequiredType.Button> 00000000-0000-0000-0000-000000000000
+      SceneObject: !<RequiredType.Button> 00000000-0000-0000-0000-000000000000
+      increaseButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      increaseButtond: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      startButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

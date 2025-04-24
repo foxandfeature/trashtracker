@@ -1,0 +1,63 @@
+- !<AssetImportMetadata/d237e4d5-6c48-472d-a0e9-b4d5812a3901>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> fc5e03df-9c2d-420d-9af9-047be967c880
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> fc5e03df-9c2d-420d-9af9-047be967c880
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    AssetLibraryId: 6IjlQoyQqgI1k7i9LdT7SR
+  AssetDataMap:
+    ObjectPrefab: !<own> 2845a5ec-b3c9-4536-8481-01cc03f1fcae
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/12b6502b-06e8-4e4e-897d-523c9eba6a4c>
+  PackagePath: ToonFlame__PLACE_IN_OBJECTS_PANEL
+  objects:
+    - !<own> 96591f13-1cbb-484d-b000-bfdbae18cd10
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefabAssetData/2845a5ec-b3c9-4536-8481-01cc03f1fcae>
+  SourceRemaps:
+    - 6906f966-e9db-4af2-8f08-10e59a37b585: e2b6ca46-a81e-477a-9e61-5ee43ed0b1c1
+    - ce5b47a9-691a-4805-adc4-fbd212e58229: 96591f13-1cbb-484d-b000-bfdbae18cd10
+    - fc5e03df-9c2d-420d-9af9-047be967c880: 12b6502b-06e8-4e4e-897d-523c9eba6a4c
+  SourceState: !<own> 12b6502b-06e8-4e4e-897d-523c9eba6a4c
+- !<SceneObject/96591f13-1cbb-484d-b000-bfdbae18cd10>
+  PrefabRemaps:
+    []
+  Name: Toon Flame
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e2b6ca46-a81e-477a-9e61-5ee43ed0b1c1
+- !<RenderMeshVisual/e2b6ca46-a81e-477a-9e61-5ee43ed0b1c1>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual 1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 779980ff-58e1-42c2-ba36-02911c4de2e1
+  Mesh: !<reference> 655f2bc4-5449-4d9b-bb71-ee81b8030c73
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}

@@ -1,0 +1,42 @@
+studioVersion:
+  major: 5
+  minor: 7
+  patch: 2
+  build: 25030805
+  type: Public
+coreVersion: 301
+clientVersion: 13.300000
+updateCheckpoint: 55
+sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
+viewConfig:
+  simulation:
+    device: Galaxy S9
+    cameraFov: 39.098301
+    fullFrameAspect: 0.520700
+    resolutionScale: 1.000000
+    viewport: Maximized
+    output: Live
+    stereoOutputEye: Center
+    deviceTypeOverride: Unknown
+  cameraType: Front
+metaInfo:
+  hints:
+    []
+  tags:
+    []
+  lensName: Sticker
+  lensDescriptors:
+    []
+  lensApplicability:
+    - Front
+    - Back
+  lensClientCompatibilities:
+    - Mobile
+    - Web
+  platformBundlesEnabled: false
+  iconHash: 57f39d672236abb3f2ca1b78b2e5bf57
+  videoPreviewHash: ""
+  fromTemplateName: Default
+  fromTemplateUrl: Lens Studio 5.7.2.25030805
+  activationCamera: Front
+  sourceMapEnabled: false

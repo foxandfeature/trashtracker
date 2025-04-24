@@ -1,0 +1,181 @@
+:root {
+    --primary_color: #3cc56d;
+    --background_color: #ffffff;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 0;
+    color: var(--primary_color);
+    font-family: "Poppins", sans-serif;
+    overflow: hidden
+}
+
+a {
+    text-decoration: none;
+}
+
+#map {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#location-marker-icon {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+}
+
+#direction-marker-icon {
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, 0);
+    width: 40px;
+    height: 40px;
+    z-index: -1;
+}
+
+#location-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    color: var(--primary_color);
+    background-color: var(--background_color);
+    font-variation-settings: 'FILL' 1;
+    border: 0;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+
+#banner-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    background-color: var(--primary_color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#banner {
+    display: flex;
+    height: 50px;
+    width: 200px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-img {
+    height: 75px;
+}
+
+.seperator {
+    width: 2px;
+    height: 30px;
+    background-color: var(--background_color);
+}
+
+.link-button {
+    width: 50px;
+    height: 50px;
+    color: var(--background_color);
+    font-variation-settings: 'FILL' 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+
+
+#ios-magnetometer-request-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 160px;
+    padding: 20px;
+    background-color: var(--background_color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#ios-magnetometer-request-menu-text {
+    margin: 0;
+    color: black;
+}
+
+#ios-magnetometer-request-menu-button {
+    height: 40px;
+    background-color: var(--primary_color);
+    color: var(--background_color);
+    border-radius: 10px;
+    border: 0;
+}
+
+#popup-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: var(--primary_color);
+}
+
+#popup-div {
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#popup-img {
+    width: 100%;
+    animation: fade-in 0.5s linear;
+}
+
+#popup-img-div {
+    width: 210px;
+    height: 280px;
+    margin-top: 10px;
+    background-color: lightgray;
+    animation: pulse 1s linear 0s infinite alternate;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    from {
+        background-color: var(--background_color);
+    }
+
+    to {
+        background-color: lightgray;
+    }
+}

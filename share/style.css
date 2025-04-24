@@ -1,0 +1,57 @@
+:root {
+    --primary_color: #3cc56d;
+    --background_color: #ffffff;
+}
+
+body {
+    background-color: var(--primary_color);
+    font-family: "Poppins", sans-serif;
+    padding-top: 100px;
+    display: grid
+}
+
+a {
+    text-decoration: none;
+}
+
+#close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--background_color);
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    color: var(--background_color);
+    font-weight: normal;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#button-wrapper {
+    width: 90%;
+    justify-self: center;
+    display: block;
+    text-align: center;
+}
+
+.lens-button {
+    width: 250px;
+    height: 250px;
+    color: var(--primary_color);
+    font-variation-settings:
+        'FILL' 1;
+    display: inline-flex;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background_color);
+    border-radius: 50px;
+}
+
+.lens-icon{
+    width: 100%;
+    height: 100%;
+}

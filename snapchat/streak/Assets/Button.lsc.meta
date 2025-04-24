@@ -1,0 +1,358 @@
+- !<AssetImportMetadata/477fc991-e34b-44df-ac27-57271fc6017b>
+  ImportedAssetIds:
+    .hidden/Button Default: !<reference> 4c793f26-de18-45db-ac10-6f098eaabf9f
+    .hidden/SpritePreset.lsmat: !<reference> f15ca531-860e-4d8c-a455-26f1f484098f
+    056cb5d886b19a33: !<reference> ad2077f5-0030-4850-ad28-595bd4c07128
+    1398d2d869499ec2: !<reference> ac6621eb-2859-4b38-b267-1ab177dbe17e
+    1fba41e390136deb: !<reference> ae40d639-248e-4072-b164-428a5d263d14
+    421f6878100620f3: !<reference> af93a319-705f-4a99-8ec0-f70976beba4e
+    529ca4d6e6825745: !<reference> cef527e2-51fe-4f20-be56-880636f8bf2f
+    5959e7dc46fbec48: !<reference> cc538d5c-a86e-4f85-8ec6-117f9883ef98
+    6feca85442d21fd5: !<reference> b18d374f-136f-453f-af83-1b81583b5685
+    9c9e126d282ffa6c: !<reference> 6675c34b-a8fa-44e8-a373-a8325e89873f
+    Button: !<reference> faf8f102-bcc6-43c8-a91d-f6ab3a70962e
+    Modules/Animation/Easing: !<reference> 18a527b1-17f9-418c-91d8-b7ce0aa3d458
+    Modules/Animation/PropertyAnimator: !<reference> 9b4e4841-76eb-4cb4-a0d4-52dff424c68d
+    Modules/BehaviorSupport/BehaviorEventCallbacks: !<reference> 68c9af76-2d7c-410a-afdc-242652e48467
+    Modules/Debug/ComponentWithDebug: !<reference> 77bc1378-9b94-4e1e-ba26-13e9f11c2f83
+    Modules/Event/Event: !<reference> 4961d660-9c00-46a0-b442-b385307713b4
+    Modules/Scene/DestructionHelper: !<reference> 652104a4-3595-4f5c-b266-989a5e6fb4ad
+    Modules/Scene/PassHelper: !<reference> 9b8da6d0-26d5-463c-acfc-9ad82ba18434
+    Modules/Scene/SceneEventHelper: !<reference> 80a96553-7a5c-4c42-a367-d178b9407c55
+    Modules/Scene/ScreenTransformHelper: !<reference> 881630e2-9048-49ef-a117-ac3ff43f59e0
+    Prefabs/Button Background/Button Background: !<reference> 7c7a14fc-9f62-462f-bc03-82c93d2b91b3
+    Prefabs/Button Background/Materials/Button Default: !<reference> d5ee5d61-4a04-4f7b-8669-e73d6f111385
+    Prefabs/Button Background/Materials/Button Default|Button Default|GraphPassInfo: !<reference> 1fbe6ff3-bdb2-4464-90e8-b4aae4368033
+    Prefabs/Button Background/Textures/Button_10X: !<reference> db363c97-9586-4dbe-b50c-dce8f6395682
+    Prefabs/Button Icon/.hidden/SpritePreset.lsmat: !<reference> a8d9cfe8-25a4-4992-acc1-39abc085cf34
+    Prefabs/Button Icon/.hidden/SpritePreset.lsmat|SpritePreset.lsmat|GraphPassInfo: !<reference> 046c35de-26b6-4c49-a6bd-b731413bd7a3
+    Prefabs/Button Icon/.hidden/Textures/Image: !<reference> 8b0e4096-778e-4fbd-aed3-f873b0806342
+    Prefabs/Button Icon/Button Icon: !<reference> 2e6375c5-98bd-47af-86d5-f3271f3075e7
+    Prefabs/Button Text/Button Text: !<reference> 45464d43-08d8-4b25-890b-e1516692af74
+    Prefabs/Button Text/Fonts/Poppins-Medium: !<reference> 80ddfe79-f8dd-43eb-ae20-717120c013a4
+    TypeScriptAsset: !<reference> 5679f267-c3a0-46e8-9a3a-4b01cc26ee99
+    TypeScriptAsset1: !<reference> 64d88181-84be-41fe-99c6-a9c89f3ee1ac
+    TypeScriptAsset2: !<reference> b1644041-b06f-478b-8552-5ae93d4692df
+    TypeScriptAsset3: !<reference> 6ea5afaf-9535-416f-9cf1-aa5e3d931317
+    TypeScriptAsset4: !<reference> e4f291c7-1ca4-41bd-8de5-c87d828cf4f2
+    TypeScriptAsset5: !<reference> 1f5c5d6b-c287-45a8-983c-db30949b32d9
+    TypeScriptAsset6: !<reference> beb56c7a-264b-4bf3-aed3-d39e0b3933f4
+    TypeScriptAsset7: !<reference> 306c28aa-8fab-4f74-bacb-9914e8e6c54f
+    TypeScriptAsset8: !<reference> 1900949f-e70d-43aa-8b69-34860a036f76
+    TypeScriptAsset9: !<reference> ddcd5cdc-a79b-42b1-9e13-8d05403aff86
+    d6bdb8a140279951: !<reference> 3856bfb7-d7ed-45ad-8c20-46f6d57294eb
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> faf8f102-bcc6-43c8-a91d-f6ab3a70962e
+  PackageType: LegacyPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    Prefabs/Button Background/Button Background: !<own> 2e449687-d9a3-4d1e-b79d-0c703b6ab42b
+    Prefabs/Button Icon/Button Icon: !<own> d4f51cd0-c50a-4c33-af95-ebdd5a006cc2
+    Prefabs/Button Text/Button Text: !<own> 5ba97cc0-be90-47c2-b9d8-2e208291ba64
+  DependentFiles:
+    []
+  ImporterSettings: !<LensCoreImporterSettings>
+    PersistentIdGenerationAlgorithm: DescriptorBased
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/187925d6-e66f-47a1-9677-4df795be2c52>
+  PackagePath: Prefabs/Button Icon/Button Icon
+  objects:
+    - !<own> 82adbd0a-b68c-4df8-b2d7-88f2ee571cd6
+  LazyLoading: false
+  RetainAssets: true
+- !<Image/210f1098-6935-4c82-8e90-d4438781843d>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 4
+  StretchMode: FitHeight
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a8d9cfe8-25a4-4992-acc1-39abc085cf34
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+- !<ScreenTransform/299f047e-860f-41fa-bfe0-94e2fc240076>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: -1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1.000000
+    bottom: -1.000000
+    right: 1.000000
+    top: 1.000000
+  Offset:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
+- !<ObjectPrefabAssetData/2e449687-d9a3-4d1e-b79d-0c703b6ab42b>
+  SourceRemaps:
+    - 7c7a14fc-9f62-462f-bc03-82c93d2b91b3: c02f99ac-40da-40a9-9c5e-bb45f3c1ec85
+    - ac6621eb-2859-4b38-b267-1ab177dbe17e: 9719789e-07ab-47f1-ad95-2ab25510fc85
+    - cc538d5c-a86e-4f85-8ec6-117f9883ef98: 79bbfd79-189a-4cff-9b7d-86da04b868c1
+    - cef527e2-51fe-4f20-be56-880636f8bf2f: c883242e-48cf-44d6-8c7c-1223e0b46715
+  SourceState: !<own> c02f99ac-40da-40a9-9c5e-bb45f3c1ec85
+- !<ObjectPrefabAssetData/5ba97cc0-be90-47c2-b9d8-2e208291ba64>
+  SourceRemaps:
+    - 45464d43-08d8-4b25-890b-e1516692af74: aedb4f98-6fa6-4b07-b860-a8c0c54aa5ae
+    - 6675c34b-a8fa-44e8-a373-a8325e89873f: fbb242fb-33fb-4d60-a519-a52132fe2aa6
+    - ad2077f5-0030-4850-ad28-595bd4c07128: cf1b16b6-fe13-4fba-849a-136944506864
+    - af93a319-705f-4a99-8ec0-f70976beba4e: a3dcbbc5-ac3f-4f20-8f94-91866e163e81
+  SourceState: !<own> aedb4f98-6fa6-4b07-b860-a8c0c54aa5ae
+- !<ScreenTransform/79bbfd79-189a-4cff-9b7d-86da04b868c1>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: -1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1.000000
+    bottom: -1.000000
+    right: 1.000000
+    top: 1.000000
+  Offset:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
+- !<SceneObject/82adbd0a-b68c-4df8-b2d7-88f2ee571cd6>
+  PrefabRemaps:
+    []
+  Name: Button Foreground
+  Enabled: true
+  Layers: 1048576
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 210f1098-6935-4c82-8e90-d4438781843d
+    - !<own> 299f047e-860f-41fa-bfe0-94e2fc240076
+- !<SceneObject/9719789e-07ab-47f1-ad95-2ab25510fc85>
+  PrefabRemaps:
+    []
+  Name: Button Background
+  Enabled: true
+  Layers: 1048576
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c883242e-48cf-44d6-8c7c-1223e0b46715
+    - !<own> 79bbfd79-189a-4cff-9b7d-86da04b868c1
+- !<Text/a3dcbbc5-ac3f-4f20-8f94-91866e163e81>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 5
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: ""
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 36
+  Font: !<reference> 80ddfe79-f8dd-43eb-ae20-717120c013a4
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Shrink
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill>
+    Mode: Solid
+    Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  Outline: !<OutlineSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: true
+  TwoSided: false
+- !<ObjectPrefab/aedb4f98-6fa6-4b07-b860-a8c0c54aa5ae>
+  PackagePath: Prefabs/Button Text/Button Text
+  objects:
+    - !<own> cf1b16b6-fe13-4fba-849a-136944506864
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefab/c02f99ac-40da-40a9-9c5e-bb45f3c1ec85>
+  PackagePath: Prefabs/Button Background/Button Background
+  objects:
+    - !<own> 9719789e-07ab-47f1-ad95-2ab25510fc85
+  LazyLoading: false
+  RetainAssets: true
+- !<Image/c883242e-48cf-44d6-8c7c-1223e0b46715>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 3
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> d5ee5d61-4a04-4f7b-8669-e73d6f111385
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/cf1b16b6-fe13-4fba-849a-136944506864>
+  PrefabRemaps:
+    []
+  Name: Button Text
+  Enabled: true
+  Layers: 1048576
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> fbb242fb-33fb-4d60-a519-a52132fe2aa6
+    - !<own> a3dcbbc5-ac3f-4f20-8f94-91866e163e81
+- !<ObjectPrefabAssetData/d4f51cd0-c50a-4c33-af95-ebdd5a006cc2>
+  SourceRemaps:
+    - 2e6375c5-98bd-47af-86d5-f3271f3075e7: 187925d6-e66f-47a1-9677-4df795be2c52
+    - 3856bfb7-d7ed-45ad-8c20-46f6d57294eb: 299f047e-860f-41fa-bfe0-94e2fc240076
+    - ae40d639-248e-4072-b164-428a5d263d14: 82adbd0a-b68c-4df8-b2d7-88f2ee571cd6
+    - b18d374f-136f-453f-af83-1b81583b5685: 210f1098-6935-4c82-8e90-d4438781843d
+  SourceState: !<own> 187925d6-e66f-47a1-9677-4df795be2c52
+- !<ScreenTransform/fbb242fb-33fb-4d60-a519-a52132fe2aa6>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1.000000
+    bottom: -1.000000
+    right: 1.000000
+    top: 1.000000
+  Offset:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
